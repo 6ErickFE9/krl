@@ -1,0 +1,144 @@
+/* Estilos modernos para os cards */
+.logo {
+    max-width: 40%;
+    height: auto;
+}
+
+.btn-group .btn {
+    border: none;
+    color: #000000; /* Cor do texto dos botões */
+    transition: all 0.3s ease;
+    margin-right: 160px;
+}
+
+.btn-group .btn:hover {
+    color: #007ffd; /* Cor do texto dos botões no hover */
+}
+
+.dropdown-menu {
+    background-color: #fff; /* Cor de fundo do dropdown */
+    border: none; /* Remove a borda do dropdown */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.dropdown-item {
+    color: #333; /* Cor dos itens do dropdown */
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+    background-color: #f0f0f0; /* Cor de fundo dos itens do dropdown no hover/foco */
+}
+
+@media (max-width: 576px) {
+    .btn-group .btn {
+        display: none; /* Esconde os botões individuais em telas menores */
+    }
+}
+
+.card {
+    transition: transform 0.2s, box-shadow 0.3s;
+    border: none; /* Remove a borda padrão */
+    border-radius: 8px; /* Borda arredondada */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    overflow: hidden; /* Para garantir que a transição de hover funcione bem */
+    color: #333; /* Cor do texto nos cards */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta a sombra no hover */
+}
+
+.card-img-top {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+    color: #333; /* Cor do título */
+}
+
+.card-title:hover {
+    color: #007bff; /* Cor do título no hover */
+}
+
+.card-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.card-link:hover {
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: #007bff; /* Cor de fundo do botão */
+    border-color: #007bff; /* Cor da borda do botão */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Cor de fundo do botão no hover */
+    border-color: #0056b3; /* Cor da borda do botão no hover */
+}
+
+.btn-primary:focus, .btn-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); /* Sombra ao focar no botão */
+}
+
+.bg-primary {
+    background: linear-gradient(to right, 
+        #00bfff, #1e90ff, #4169e1, #0000ff, #0000fa) !important;
+    color: white; /* Cor do texto no topo */
+}
+
+.text-primary {
+    color: #007bff !important; /* Cor do texto primário */
+}
+
+.text-secondary {
+    color: #6c757d !important; /* Cor do texto secundário */
+}
+
+.text-muted {
+    color: #a2a2a2 !important; /* Cor do texto "muted" */
+}
+
+.text-white {
+    color: white !important; /* Cor do texto branco */
+}
+
+/* Estilos para o dropdown */
+.dropdown-menu {
+    background-color: #fff; /* Cor de fundo do dropdown */
+    border: none; /* Remove a borda do dropdown */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.dropdown-item {
+    color: #333; /* Cor dos itens do dropdown */
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+    background-color: #f0f0f0; /* Cor de fundo dos itens do dropdown no hover/foco */
+}
+
+body {
+    background-color: #000068;
+    color: white;
+}
+
+aside {
+    background-color: #00bfff;
+    color: #000000;
+}

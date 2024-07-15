@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes, Séries e Jogos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Topo da página -->
+    <header class="container-fluid bg-primary text-white p-2">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-auto">
+                <img src="Imagem do WhatsApp de 2024-07-14 à(s) 19.53.55_5b76d735.png"Logo da marca" class="logo">
+            </div>
+            <div class="col-auto ml-auto d-none d-sm-block">
+                <div class="btn-group">
+                    <a href="#" class="btn btn-outline-light mr-2">Filmes</a>
+                    <a href="#" class="btn btn-outline-light mr-2">Séries</a>
+                    <a href="#" class="btn btn-outline-light mr-2">Jogos</a>
+                    <a href="#" class="btn btn-outline-light">Suporte</a>
+                </div>
+            </div>
+            <div class="col-auto ml-auto d-block d-sm-none">
+                <div class="dropdown">
+                    <button class="btn btn-outline-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Opções
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Filmes</a>
+                        <a class="dropdown-item" href="#">Séries</a>
+                        <a class="dropdown-item" href="#">Jogos</a>
+                        <a class="dropdown-item" href="#">Suporte</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Filtro e Conteúdo -->
+    <main class="container-fluid">
+        <div class="row">
+            <!-- Filtro -->
+            <aside class="col-lg-3 p-3">
+                <h4>Filtrar por:</h4>
+                <div class="form-group">
+                    <label for="productType">Tipo de Produto:</label>
+                    <select class="form-control" id="productType">
+                        <option value="todos">Todos</option>
+                        <option value="filme">Filme</option>
+                        <option value="série">Série</option>
+                        <option value="jogo">Jogo</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="genre">Gênero:</label>
+                    <select class="form-control" id="genre">
+                        <option value="todos">Todos</option>
+                        <option value="ação">Ação</option>
+                        <option value="animação">Animação</option>
+                        <option value="aventura">Aventura</option>
+                        <option value="cinema catástrofe">Cinema Catástrofe</option>
+                        <option value="comédia">Comédia</option>
+                        <option value="comédia romântica">Comédia Romântica</option>
+                        <option value="comédia dramática">Comédia Dramática</option>
+                        <option value="comédia de ação">Comédia de Ação</option>
+                        <option value="cult">Cult</option>
+                        <option value="documentários">Documentários</option>
+                        <option value="drama">Drama</option>
+                        <option value="espionagem">Espionagem</option>
+                        <option value="erótico">Erótico</option>
+                        <option value="fantasia">Fantasia</option>
+                        <option value="faroeste">Faroeste</option>
+                        <option value="ficção científica">Ficção Científica</option>
+                        <option value="guerra">Guerra</option>
+                        <option value="musical">Musical</option>
+                        <option value="filme noir">Filme Noir</option>
+                        <option value="policial">Policial</option>
+                        <option value="romance">Romance</option>
+                        <option value="suspense">Suspense</option>
+                        <option value="terror">Terror</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="year">Ano:</label>
+                    <input type="text" class="form-control" id="year">
+                </div>
+            </aside>
+
+            <!-- Conteúdo -->
+            <section id="content" class="col-lg-9 p-3">
+                <!-- Cards de exemplo -->
+                <div class="row">
+                    <!-- Card 1 -->
+                    <div class="col-md-4 mb-4">
+                        <a href="eoventolevou.html" class="card-link">
+                            <div class="card">
+                                <img src="Poster_-_Gone_With_the_Wind_01.jpg" class="card-img-top" alt="Imagem do Produto 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">E o Vento Levou</h5>
+                                    <ul class="list-unstyled">
+                                        <li><strong>Gênero:</strong> Drama</li>
+                                        <li><strong>Tipo:</strong> Filme</li>
+                                        <li><strong>Classificação:</strong> Livre</li>
+                                        <li><strong>Data de Lançamento:</strong> 1939</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-md-4 mb-4">
+                        <a href="umaodisseianoespaco.html" class="card-link">
+                            <div class="card">
+                                <img src="Two_thousand_and_one_a_space_odyssey_ver2.jpg" class="card-img-top" alt="Imagem do Produto 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">2001: Uma Odisseia no Espaço</h5>
+                                    <ul class="list-unstyled">
+                                        <li><strong>Gênero:</strong> Ficção Científica </li>
+                                        <li><strong>Tipo:</strong> Filme</li>
+                                        <li><strong>Classificação:</strong> Livre </li>
+                                        <li><strong>Data de Lançamento:</strong> 1939</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-md-4 mb-4">
+                        <a href="magicodeoz.html" class="card-link">
+                            <div class="card">
+                                <img src="243px-Wizard_of_oz_movie_poster.jpg" class="card-img-top" alt="Imagem do Produto 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">O Mágico de Oz</h5>
+                                    <ul class="list-unstyled">
+                                        <li><strong>Gênero:</strong> Aventura</li>
+                                        <li><strong>Tipo:</strong> Filme</li>
+                                        <li><strong>Classificação:</strong> Livre</li>
+                                        <li><strong>Data de Lançamento:</strong> 1939</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <a href="casablanca.html" class="card-link">
+                            <div class="card">
+                                <img src="CasablancaPoster-Gold.jpg" class="card-img-top" alt="Imagem do Produto 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Casa Blanca</h5>
+                                    <ul class="list-unstyled">
+                                        <li><strong>Gênero:</strong> Drama </li>
+                                        <li><strong>Tipo:</strong> Filme </li>
+                                        <li><strong>Classificação:</strong> Livre</li>
+                                        <li><strong>Data de Lançamento:</strong> 1943</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <a href="supermario3d.html" class="card-link">
+                            <div class="card">
+                                <img src="270px-Super_Mario_64_front.jpg" class="card-img-top" alt="Imagem do Produto 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Super Mario 64</h5>
+                                    <ul class="list-unstyled">
+                                        <li><strong>Gênero:</strong> Aventura</li>
+                                        <li><strong>Tipo:</strong> Jogo</li>
+                                        <li><strong>Classificação:</strong> Livre</li>
+                                        <li><strong>Data de Lançamento:</strong> 1996</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <a href="gtasan.html" class="card-link">
+                            <div class="card">
+                                <img src="Grand_Theft_Auto_San_Andreas_capa.png" class="card-img-top" alt="Imagem do Produto 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Grand Theft Auto: San Andreas</h5>
+                                    <ul class="list-unstyled">
+                                        <li><strong>Gênero:</strong> Ação </li>
+                                        <li><strong>Tipo:</strong> Jogo</li>
+                                        <li><strong>Classificação:</strong> 18+ </li>
+                                        <li><strong>Data de Lançamento:</strong> 2004</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <a href="pacman.html" class="card-link">
+                            <div class="card">
+                                <img src="275px-Resident_Evil_2_capa.png" class="card-img-top" alt="Imagem do Produto 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Resident Evil 2</h5>
+                                    <ul class="list-unstyled">
+                                        <li><strong>Gênero:</strong>Terror</li>
+                                        <li><strong>Tipo:</strong> Jogo</li>
+                                        <li><strong>Classificação:</strong> 18+ </li>
+                                        <li><strong>Data de Lançamento:</strong> 1998</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <a href="howi.html" class="card-link">
+                            <div class="card">
+                                <img src="200px-How_I_Met_Your_Mother_season_1_DVD_Cover.jpg" class="card-img-top" alt="Imagem do Produto 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Como Eu Conheci Sua Mãe</h5>
+                                    <ul class="list-unstyled">
+                                        <li><strong>Gênero:</strong> Comédia </li>
+                                        <li><strong>Tipo:</strong> Série </li>
+                                        <li><strong>Classificação:</strong> 14+ </li>
+                                        <li><strong>Data de Lançamento:</strong> 2005</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <a href="sapecagens.html" class="card-link">
+                            <div class="card">
+                                <img src="Fifty_Shades_of_Grey_2015.jpg" class="card-img-top" alt="Imagem do Produto 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">50 Tons de Cinza</h5>
+                                    <ul class="list-unstyled">
+                                        <li><strong>Gênero:</strong> Erótico</li>
+                                        <li><strong>Tipo:</strong> Filme </li>
+                                        <li><strong>Classificação:</strong> 16+ </li>
+                                        <li><strong>Data de Lançamento:</strong> 2015</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+    </main>
+    <footer class="container-fluid text-center bg-primary text-white p-3">
+        <p>&copy; 2024 | Todos os direitos reservados</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
